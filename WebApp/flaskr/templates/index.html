@@ -1,9 +1,9 @@
 <html>
 <body>
-    <h3>Form</h3>
+    <h3>Income PRediction Form</h3>
 
 <div>
-  <form action="/action_page.php">
+  <form action="http://127.0.0.1:5000/result" method="POST">
     <label for="age">Age</label>
     <input type="text" id="age" name="age">
     <br>
@@ -77,15 +77,33 @@
       <option value="5">Wife</option>
     </select>
     <br>
+    <label for="race">Race</label>
+    <select id="race" name="race">
+      <option value="0">Amer Indian Eskimo</option>
+      <option value="1">Asian Pac Islander</option>
+      <option value="2">Black</option>
+      <option value="3">Other</option>
+      <option value="4">White</option>
+    </select>
+    <br>
     <label for="gender">Gender</label>
     <select id="gender" name="gender">
       <option value="0">Female</option>
       <option value="1">Male</option>
     </select>
     <br>
+    <label for="c_gain">Capital Gain </label>
+    <input type="text" id="c_gain" name="c_gain">btw:[0-99999]
+    <br>
+    <label for="c_loss">Capital Loss </label>
+    <input type="text" id="c_loss" name="c_loss">btw:[0-4356]
+    <br>
+    <label for="hours_per_week">Hours per Week </label>
+    <input type="text" id="hours_per_week" name="hours_per_week">btw:[1-99]
+    <br>
     <label for="native-country">Native Country</label>
     <select id="native-country" name="native-country">
-      <option value="0">ACambodia</option>
+      <option value="0">Cambodia</option>
       <option value="1">Canada</option>
       <option value="2">China</option>
       <option value="3">Columbia</option>
@@ -127,15 +145,6 @@
       <option value="39">Vietnam</option>
       <option value="40">Yugoslavia</option>
     </select>
-    <br>
-    <label for="c_gain">Capital Gain </label>
-    <input type="text" id="c_gain" name="c_gain">btw:[0-99999]
-    <br>
-    <label for="c_loss">Capital Loss </label>
-    <input type="text" id="c_loss" name="c_loss">btw:[0-4356]
-    <br>
-    <label for="hours_per_week">Hours per Week </label>
-    <input type="text" id="hours_per_week" name="hours_per_week">btw:[1-99]
     <br>
     <input type="submit" value="Submit">
   </form>
